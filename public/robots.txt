@@ -1,0 +1,9 @@
+# robots.txt
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://primemetal.com/sitemap.xml
+
+# Disallow admin areas (not implemented but good practice)
+Disallow: /api/

@@ -1,0 +1,113 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 215 25% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
+    --primary: 215 60% 15%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 215 15% 96%;
+    --secondary-foreground: 215 25% 15%;
+    --muted: 215 15% 96%;
+    --muted-foreground: 215 15% 45%;
+    --accent: 25 90% 54%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 215 15% 90%;
+    --input: 215 15% 90%;
+    --ring: 215 60% 15%;
+    --chart-1: 215 60% 35%;
+    --chart-2: 25 90% 54%;
+    --chart-3: 215 15% 45%;
+    --chart-4: 180 60% 40%;
+    --chart-5: 25 80% 45%;
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-semibold tracking-tight;
+  }
+}
+
+@layer utilities {
+  .glass-effect {
+    @apply bg-white/80 backdrop-blur-xl border border-white/20;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary-500 to-accent-500 bg-clip-text text-transparent;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-20 lg:py-24;
+  }
+
+  .container-padding {
+    @apply px-4 sm:px-6 lg:px-8;
+  }
+
+  .card-shadow {
+    box-shadow: 0 4px 6px -1px rgba(15, 33, 55, 0.08),
+                0 2px 4px -1px rgba(15, 33, 55, 0.04);
+  }
+
+  .card-shadow-hover {
+    box-shadow: 0 20px 25px -5px rgba(15, 33, 55, 0.1),
+                0 10px 10px -5px rgba(15, 33, 55, 0.04);
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary-500 hover:bg-primary-600 text-white font-semibold
+           rounded-lg px-6 py-3 transition-all duration-300
+           hover:shadow-lg active:scale-[0.98];
+  }
+
+  .btn-secondary {
+    @apply bg-white hover:bg-gray-50 text-primary-500 font-semibold
+           rounded-lg px-6 py-3 border-2 border-primary-500
+           transition-all duration-300 hover:shadow-md active:scale-[0.98];
+  }
+
+  .btn-accent {
+    @apply bg-accent-500 hover:bg-accent-600 text-white font-semibold
+           rounded-lg px-6 py-3 transition-all duration-300
+           hover:shadow-accent active:scale-[0.98];
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold text-primary-500 text-center;
+  }
+
+  .section-subtitle {
+    @apply text-base md:text-lg text-muted-foreground max-w-2xl mx-auto text-center mt-4;
+  }
+}
