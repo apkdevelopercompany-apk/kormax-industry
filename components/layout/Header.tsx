@@ -109,9 +109,9 @@ export default function Header() {
       <motion.header
         initial={{ y: -100 }}
         animate={{ y: 0 }}
-        className={`z-50 transition-all duration-300 ${isScrolled
-          ? 'fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-md shadow-md py-1 lg:py-2 border-b border-gray-100 text-gray-900'
-          : 'bg-white/95 text-black'
+        className={`sticky top-0 z-50 transition-all duration-300 ${isScrolled
+            ? 'bg-white/95 backdrop-blur-md shadow-md py-1 lg:py-2 border-b border-gray-100 text-gray-900'
+            : 'bg-white/95 text-black py-2 lg:py-3'
           }`}
       >
         <div className="container mx-auto px-4">
@@ -214,7 +214,7 @@ export default function Header() {
 
             {/* Mobile Menu Button */}
             <button
-              className={`lg:hidden p-2 rounded-lg transition-colors ${isScrolled ? 'text-primary-600 hover:bg-primary-50' : 'text-white hover:bg-white/10'
+              className={`lg:hidden p-2 rounded-lg transition-colors ${isScrolled ? 'text-primary-600 hover:bg-primary-50' : 'text-primary-600 hover:bg-gray-150'
                 }`}
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               aria-label="Toggle menu"
@@ -248,10 +248,11 @@ export default function Header() {
                   >
                     <Link
                       href={item.href}
-                      className="block py-3 text-base font-medium text-foreground hover:text-primary-600 hover:bg-primary-50 px-4 rounded-lg transition-colors"
+                      className="flex items-center justify-between py-3 text-base font-medium text-foreground hover:text-primary-600 hover:bg-primary-50 px-4 rounded-lg transition-colors group/m-link"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
-                      {item.label}
+                      <span>{item.label}</span>
+                      <span className="opacity-40 group-hover/m-link:translate-x-1 transition-transform">→</span>
                     </Link>
                   </motion.div>
                 ))}
