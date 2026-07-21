@@ -3,38 +3,11 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import Image from 'next/image';
-import { ArrowRight, Search, Eye } from 'lucide-react';
-import { useState } from 'react';
-import { products, companyInfo } from '@/lib/data';
+import { ArrowRight, Eye } from 'lucide-react';
+import { products } from '@/lib/data';
 import { fadeInUp, staggerContainer, staggerItem } from '@/lib/animations';
 
-const allCategories = [
-  'All',
-  'Aluminium Continuous Bottom Profile',
-  'Aluminium Profile Bracket',
-  'Aluminium Hand Rail',
-  'Aluminium Plain Hand Rail',
-  'Aluminium Balcony Bracket',
-  'Aluminium Staircase & Balcony Bracket',
-  'Aluminium Railing Accessories',
-  'Gate & Wall Profile',
-  'Steel Glass Railing Bracket',
-  'Steel Pipe',
-  'Glass Door Patch Fittings',
-  'Invisible Grill Accessories',
-];
-
 export default function ProductsPage() {
-  const [searchQuery, setSearchQuery] = useState('');
-  const [activeCategory, setActiveCategory] = useState('All');
-
-  const filteredProducts = products.filter(product => {
-    const matchesSearch = product.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                          product.shortDescription.toLowerCase().includes(searchQuery.toLowerCase());
-    const matchesCategory = activeCategory === 'All' || product.name.includes(activeCategory);
-    return matchesSearch && matchesCategory;
-  });
-
   return (
     <>
       {/* Hero Banner */}
@@ -70,7 +43,7 @@ export default function ProductsPage() {
               Our Products
             </h1>
             <p className="text-lg md:text-xl text-white/85 mb-8 max-w-2xl mx-auto">
-               Explore KORMAX's premium range of aluminium railing systems, architectural profiles, glass door patch fittings, steel glass railing brackets, and innovative hardware solutions designed for modern residential and commercial projects.
+              Explore KORMAX's premium range of aluminium railing systems, architectural profiles, glass door patch fittings, steel glass railing brackets, and innovative hardware solutions designed for modern residential and commercial projects.
             </p>
 
             {/* Quick Info */}
@@ -95,45 +68,6 @@ export default function ProductsPage() {
       {/* Products Section */}
       <section className="section-padding bg-gray-50">
         <div className="container mx-auto px-4">
-          {/* Search and Filter */}
-          <motion.div
-            variants={fadeInUp}
-            initial="initial"
-            animate="animate"
-            className="mb-12"
-          >
-            {/* Search Bar */}
-            <div className="max-w-md mx-auto mb-8">
-              <div className="relative">
-                <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
-                <input
-                  type="text"
-                  placeholder="Search products..."
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  className="w-full pl-12 pr-4 py-3.5 rounded-xl border border-gray-200 bg-white focus:outline-none focus:ring-2 focus:ring-accent-500 focus:border-transparent transition-all shadow-sm"
-                />
-              </div>
-            </div>
-
-            {/* Category Filter */}
-            <div className="flex flex-wrap justify-center gap-2">
-              {allCategories.map((category) => (
-                <button
-                  key={category}
-                  onClick={() => setActiveCategory(category)}
-                  className={`px-5 py-2.5 rounded-lg text-sm font-medium transition-all ${
-                    activeCategory === category
-                      ? 'bg-primary-600 text-white shadow-lg'
-                      : 'bg-white text-gray-700 hover:bg-gray-100 shadow-sm'
-                  }`}
-                >
-                  {category}
-                </button>
-              ))}
-            </div>
-          </motion.div>
-
           {/* Products Grid */}
           <motion.div
             variants={staggerContainer}
@@ -141,7 +75,7 @@ export default function ProductsPage() {
             animate="animate"
             className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
           >
-            {filteredProducts.map((product) => (
+            {products.map((product) => (
               <motion.div
                 key={product.id}
                 variants={staggerItem}
@@ -212,13 +146,6 @@ export default function ProductsPage() {
               </motion.div>
             ))}
           </motion.div>
-
-          {/* No Results */}
-          {filteredProducts.length === 0 && (
-            <div className="text-center py-16">
-              <p className="text-xl text-gray-500">No products found matching your criteria.</p>
-            </div>
-          )}
 
           {/* CTA */}
           <motion.div
