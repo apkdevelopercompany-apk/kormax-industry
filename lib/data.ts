@@ -61,21 +61,6 @@ Manufactured using premium quality aluminium extrusion, these profiles offer sup
       'Architectural Glass Systems'
     ],
 
-    features: [
-      'Premium Aluminium Extrusion',
-      'Designed for Frameless Glass Railing Systems',
-      'Supports 12mm to 16mm Toughened Glass (Model Dependent)',
-      'Excellent Structural Stability',
-      'Lightweight yet High Strength',
-      'Corrosion Resistant',
-      'Weather Resistant',
-      'Maintenance Free',
-      'Easy Installation',
-      'Elegant Modern Finish',
-      'Available in Multiple Profile Designs',
-      'Suitable for Indoor & Outdoor Applications'
-    ],
-
     specifications: {
       'Product Series': 'KM-1001 to KM-1022',
       'Material': 'Premium Aluminium Extrusion',
@@ -132,21 +117,6 @@ The product range includes KM-1031, KM-1032, KM-1033, and KM-1034 models, each d
       'Architectural Glazing',
       'Hotels & Resorts',
       'Shopping Malls'
-    ],
-
-    features: [
-      'Premium Aluminium Construction',
-      'Precision Engineered Design',
-      'Excellent Glass Support',
-      'High Structural Stability',
-      'Corrosion Resistant',
-      'Weather Resistant',
-      'Lightweight Design',
-      'Easy Installation',
-      'Low Maintenance',
-      'Modern Architectural Finish',
-      'Suitable for Indoor & Outdoor Applications',
-      'Available in Multiple Profile Variants'
     ],
 
     specifications: {
@@ -222,21 +192,6 @@ The collection includes multiple profile designs from KM-1051 to KM-1070, featur
       'Architectural Glass Systems'
     ],
 
-    features: [
-      'Premium Aluminium Construction',
-      'Ergonomic Hand Grip Design',
-      'High Strength & Lightweight',
-      'Excellent Corrosion Resistance',
-      'Weather Resistant',
-      'Modern Architectural Appearance',
-      'Low Maintenance',
-      'Easy Installation',
-      'Suitable for Indoor & Outdoor Applications',
-      'Available in Multiple Profile Designs',
-      'LED Compatible Models Available',
-      'Long Service Life'
-    ],
-
     specifications: {
       'Product Series': 'KM-1051 to KM-1070',
       'Material': 'Premium Aluminium Extrusion',
@@ -290,21 +245,6 @@ The collection includes Round, Square and Rectangular profile options (KM-1071 t
       'Indoor Railings',
       'Outdoor Railings',
       'Architectural Railing Projects'
-    ],
-
-    features: [
-      'Premium Aluminium Extrusion',
-      'Minimalist Profile Design',
-      'Comfortable Grip',
-      'Smooth Surface Finish',
-      'Corrosion Resistant',
-      'Lightweight Construction',
-      'Weather Resistant',
-      'Easy Installation',
-      'Low Maintenance',
-      'Long Service Life',
-      'Available in Multiple Profile Shapes',
-      'Suitable for Modern Architecture'
     ],
 
     specifications: {
@@ -377,21 +317,6 @@ The product range includes KM-1401 to KM-1422 with multiple profile designs to s
       'Terrace Glass Railings',
       'Deck Glass Railings',
       'High-Rise Building Railings'
-    ],
-
-    features: [
-      'Premium Aluminium Extrusion',
-      'Heavy-Duty Structural Support',
-      'Designed for Balcony Glass Railings',
-      'Excellent Load Bearing Capacity',
-      'Corrosion Resistant',
-      'Weather Resistant',
-      'Precision Engineered',
-      'Easy Installation',
-      'Low Maintenance',
-      'Modern Architectural Finish',
-      'Multiple Bracket Designs Available',
-      'Suitable for Indoor & Outdoor Applications'
     ],
 
     specifications: {
@@ -467,21 +392,6 @@ The collection includes KM-1431 to KM-1453 models, offering multiple bracket pro
       'Multi-Level Buildings',
       'Luxury Villa Staircases',
       'Architectural Glass Stair Systems'
-    ],
-
-    features: [
-      'Heavy-Duty Aluminium Construction',
-      'Designed for Staircase & Balcony Applications',
-      'High Load Bearing Capacity',
-      'Precision Engineered Bracket Design',
-      'Excellent Structural Stability',
-      'Corrosion Resistant',
-      'Weather Resistant',
-      'Premium Surface Finish',
-      'Easy Glass Installation',
-      'Low Maintenance',
-      'Long Service Life',
-      'Available in Multiple Bracket Variants'
     ],
 
     specifications: {
@@ -589,21 +499,6 @@ The collection includes KM-1455 to KM-1493, offering a wide range of connectors,
       'Staircase Railing Components'
     ],
 
-    features: [
-      'Premium Aluminium Construction',
-      'Precision Machined Components',
-      'Perfect Fit with KORMAX Profiles',
-      'Secure Connection System',
-      'Neat & Professional Finishing',
-      'Corrosion Resistant',
-      'Weather Resistant',
-      'Lightweight Design',
-      'Easy Installation',
-      'Low Maintenance',
-      'Long Service Life',
-      'Wide Range of Accessories'
-    ],
-
     specifications: {
       'Product Series': 'KM-1455 to KM-1493',
       'Material': 'Premium Aluminium',
@@ -665,21 +560,6 @@ The collection includes KM-1541 to KM-1552 profile variants, offering multiple d
       'Compound Wall Designs',
       'Exterior Architectural Features',
       'Commercial Building Facades'
-    ],
-
-    features: [
-      'Premium Aluminium Extrusion',
-      'Modern Architectural Profile Design',
-      'High Structural Strength',
-      'Excellent Corrosion Resistance',
-      'Weather Resistant',
-      'Lightweight Construction',
-      'Elegant Surface Finish',
-      'Easy Fabrication & Installation',
-      'Minimal Maintenance',
-      'Long Service Life',
-      'Available in Multiple Profile Designs',
-      'Suitable for Indoor & Outdoor Applications'
     ],
 
     specifications: {
@@ -758,21 +638,6 @@ The collection includes KM-1561 to KM-1581, offering multiple bracket designs su
       'Architectural Steel Railings'
     ],
 
-    features: [
-      'Premium Steel Construction',
-      'Heavy Load Bearing',
-      'High Structural Stability',
-      'Precision Machined',
-      'Rust Resistant Finish',
-      'Weather Resistant',
-      'Secure Glass Clamping',
-      'Easy Installation',
-      'Long Service Life',
-      'Low Maintenance',
-      'Multiple Bracket Designs',
-      'Suitable for Heavy Duty Applications'
-    ],
-
     specifications: {
       'Product Series': 'KM-1561 to KM-1581',
       'Material': 'Premium Steel',
@@ -826,19 +691,6 @@ The Steel Pipe collection includes KM-1591 to KM-1596, suitable for railing post
       'Gate Fabrication',
       'Commercial Structures',
       'Decorative Steel Works'
-    ],
-
-    features: [
-      'Premium Quality Steel',
-      'High Structural Strength',
-      'Excellent Weldability',
-      'Corrosion Resistant Finish',
-      'Dimensional Accuracy',
-      'Heavy Duty Performance',
-      'Easy Fabrication',
-      'Smooth Surface Finish',
-      'Low Maintenance',
-      'Long Service Life'
     ],
 
     specifications: {
@@ -932,21 +784,6 @@ The collection includes KM-1600 to KM-1642 with a comprehensive range of top pat
       'Glass Partition Doors',
       'Corporate Offices',
       'Architectural Glass Systems'
-    ],
-
-    features: [
-      'Premium Door Hardware',
-      'Secure Glass Fixing',
-      'Smooth Door Operation',
-      'High Precision Engineering',
-      'Corrosion Resistant',
-      'Modern Architectural Finish',
-      'Heavy Duty Construction',
-      'Easy Installation',
-      'Reliable Performance',
-      'Low Maintenance',
-      'Complete Door Hardware Solution',
-      'Long Service Life'
     ],
 
     specifications: {

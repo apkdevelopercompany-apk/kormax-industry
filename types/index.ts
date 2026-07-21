@@ -7,7 +7,7 @@ export interface Product {
   image: string;
   gallery: string[];
   applications: string[];
-  features: string[];
+  features?: string[];
   specifications: Record<string, string>;
   industries: string[];
 }

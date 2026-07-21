@@ -122,24 +122,6 @@ export default function ProductDetailsClient({ product }: ProductDetailsClientPr
                 {product.fullDescription}
               </p>
 
-              {/* Key Features */}
-              <div className="mb-8">
-                <h3 className="text-xl font-bold text-primary-600 mb-4 flex items-center gap-2">
-                  <Check className="w-5 h-5 text-accent-500" />
-                  Key Features
-                </h3>
-                <div className="grid sm:grid-cols-2 gap-3">
-                  {product.features.map((feature, idx) => (
-                    <div key={idx} className="flex items-center gap-3 bg-gray-50 border border-gray-150 rounded-xl p-3 shadow-sm hover:border-accent-500/40 transition-colors">
-                      <div className="w-6 h-6 rounded-lg bg-accent-100 flex items-center justify-center flex-shrink-0">
-                        <Check className="w-3.5 h-3.5 text-accent-600" />
-                      </div>
-                      <span className="text-sm font-medium text-gray-800">{feature}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
               {/* Quick Info Badges */}
               <div className="grid grid-cols-3 gap-4 mb-4">
                 <div className="bg-white border border-gray-200 rounded-xl p-4 text-center shadow-sm hover:border-accent-500/60 transition-colors flex flex-col items-center justify-center">
